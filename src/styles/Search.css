@@ -90,3 +90,9 @@ body.darkmode .filter-region-container {
 body.darkmode .filter-region:hover .dropdown {
   background-color: rgb(41, 55, 68);
 }
+
+@media only screen and (max-width: 500px) {
+  .container-search {
+    flex-direction: column;
+  }
+}

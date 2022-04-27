@@ -17,7 +17,7 @@ const CardCountryDetail = ({ countryArray }) => {
       {countryArray.map((item) => {
         return (
           <div key={item.name.common} className="countryDetail-container">
-            <img src={item.flags.svg} alt="flag" />
+            <img src={item.flags.png} alt="flag" />
             <div className="container-text">
               <div className="countryDetail-text">
                 <div className="countryDetail-first-child">

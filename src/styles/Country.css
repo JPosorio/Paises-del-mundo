@@ -58,3 +58,9 @@
 body.darkmode .country-border {
   background-color: rgb(41, 55, 68);
 }
+
+@media only screen and (max-width: 552px) {
+  .countryDetail-text {
+    display: block;
+  }
+}
