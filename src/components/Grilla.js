@@ -2,7 +2,7 @@ import useCountries from "../hooks/useCountries";
 import Card from "./Card";
 import "../styles/Grilla.css";
 
-const Grilla = ({ url }) => {
+const Grilla = ({ url = "https://restcountries.com/v3.1/all" }) => {
   const [countries] = useCountries({ url });
 
   return (

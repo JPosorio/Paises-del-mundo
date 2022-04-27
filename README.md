@@ -15,3 +15,8 @@ relevante y datos curiosos. :)
 # Colaboraciones
 
 Estare atento para el que quiera aportar al proyecto para llevarlo al màximo nivel
+
+#Para tener en cuenta
+
+El buscador por paìs solo te dara respuesta si buscas el nombre exacto del pais que
+quieres ver
