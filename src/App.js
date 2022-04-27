@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Search from "./components/Search";
+import Grilla from "./components/Grilla";
+import Country from "./components/Country";
+import CountryBorder from "./components/CountryBorder";
+import Region from "./components/Region";
+import { Route } from "wouter";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Route path="/">
+        <Search />
+        <Grilla url="https://restcountries.com/v3.1/all" />
+      </Route>
+      <Route path="/search/:country" component={Country} />
+      <Route path="/search/border/:country" component={CountryBorder} />
+      <Route path="/search/region/:region" component={Region} />
     </div>
   );
 }

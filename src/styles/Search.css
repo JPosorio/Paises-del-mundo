@@ -1,0 +1,92 @@
+.container-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  position: relative;
+  padding: 1rem 3rem;
+}
+
+.container-search div:nth-child(2) {
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.lupa {
+  margin: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  width: 33vw;
+  min-width: fit-content;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  border: none;
+  margin: 1rem;
+  outline: none;
+}
+
+.filter-region:hover .dropdown {
+  display: block;
+  position: absolute;
+  bottom: -175px;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.filter-region {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.filter-region p {
+  margin-left: 1rem;
+}
+
+.filter-region-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: fit-content;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown p {
+  padding: 0.35rem;
+}
+
+.down {
+  margin: 1rem;
+}
+
+body.darkmode .container-search > form {
+  background-color: rgb(41, 55, 68);
+  color: white;
+}
+body.darkmode .container-search > form > input {
+  background-color: rgb(41, 55, 68);
+}
+body.darkmode .container-search > form > input:focus {
+  color: white;
+}
+body.darkmode .container-search > form > input::placeholder {
+  color: white;
+}
+
+body.darkmode .filter-region-container {
+  background-color: rgb(41, 55, 68);
+}
+
+body.darkmode .filter-region:hover .dropdown {
+  background-color: rgb(41, 55, 68);
+}
